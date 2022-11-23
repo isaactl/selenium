@@ -1,0 +1,20 @@
+version: "2"
+services:
+  # node:
+  #   image: "node:14-alpine3.12"
+  #   user: "node"
+  #   working_dir: /home/node/app
+  #   environment:
+  #     - NODE_ENV=production
+  #   volumes:
+  #     - ./:/home/node/app
+  #   expose:
+  #     - "8081"
+  #   command: "node index.js"
+
+  selenium:
+    image: selenium/standalone-firefox:4.0.0-20211013
+    ports:
+      - "4444:4444"
+    environment:
+      - shm-size="2g"
