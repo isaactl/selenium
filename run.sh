@@ -1,0 +1,1 @@
+docker run -ti -p 8080:3000 -v /Users/liang/go/src/github.com/isaactl/selenium/playwright/:/opt/ isaactl/playwright /bin/bash
